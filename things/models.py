@@ -5,7 +5,7 @@ from django.db.models import Model
 
 # Create your models here.
 
-class User(AbstractUser):
-    name = models.TextField()
-    description = models.CharField(max_length=20)
+class Thing(AbstractUser):
+    name = models.CharField(max_length=20)
+    description = models.CharField(max_length=40)
     quantity = models.IntegerField()
